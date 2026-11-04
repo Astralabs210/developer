@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ASTRALABS — Independent Web Developer</title>
+<meta name="description" content="ASTRALABS is the portfolio and design laboratory of a student developer learning to build thoughtful, responsive websites for businesses.">
+<meta name="author" content="ASTRALABS">
+<meta name="theme-color" content="#08090D">
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ASTRALABS">
+<meta property="og:title" content="ASTRALABS — Independent Web Developer">
+<meta property="og:description" content="Responsive, thoughtful websites built with HTML, CSS and JavaScript. A student developer learning through real projects.">
+<meta property="og:image" content="assets/images/og-cover.svg">
+<meta property="og:image:alt" content="ASTRALABS — dark editorial cover with electric lime typography.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ASTRALABS — Independent Web Developer">
+<meta name="twitter:description" content="Responsive, thoughtful websites built with HTML, CSS and JavaScript.">
+<meta name="twitter:image" content="assets/images/og-cover.svg">
+
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icons/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300..900;1,300..900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="preloader" data-preloader aria-hidden="true">
+  <span class="preloader__brand">ASTRA<span>LABS</span></span>
+  <span class="preloader__track"><span></span></span>
+</div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="site-nav" data-nav>
+  <div class="nav__inner">
+    <a class="brand" href="#home" aria-label="ASTRALABS — home">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__text">ASTRA<span class="brand__thin">LABS</span></span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#home" class="nav__link is-active" data-nav-link>Home</a>
+      <a href="#about" class="nav__link" data-nav-link>About</a>
+      <a href="#work" class="nav__link" data-nav-link>Projects</a>
+      <a href="#services" class="nav__link" data-nav-link>Services</a>
+      <a href="#design-lab" class="nav__link" data-nav-link>Design Lab</a>
+      <a href="#process" class="nav__link" data-nav-link>Process</a>
+      <a href="#contact" class="nav__link" data-nav-link>Contact</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a class="btn btn--ghost btn--sm nav__cta" href="#contact">
+        <span>Let's Talk</span>
+        <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu" data-burger>
+        <span class="burger__box" aria-hidden="true"><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav__progress" aria-hidden="true"><span data-scroll-progress></span></div>
+</header>
+
+<!-- Mobile menu -->
+<div class="menu" id="mobile-menu" data-menu hidden>
+  <div class="menu__inner">
+    <p class="menu__label mono">MENU / ASTRALABS</p>
+    <nav class="menu__nav" aria-label="Mobile">
+      <a href="#home" data-menu-link><span class="menu__num mono">01</span>Home</a>
+      <a href="#about" data-menu-link><span class="menu__num mono">02</span>About</a>
+      <a href="#work" data-menu-link><span class="menu__num mono">03</span>Projects</a>
+      <a href="#services" data-menu-link><span class="menu__num mono">04</span>Services</a>
+      <a href="#design-lab" data-menu-link><span class="menu__num mono">05</span>Design Lab</a>
+      <a href="#process" data-menu-link><span class="menu__num mono">06</span>Process</a>
+      <a href="#contact" data-menu-link><span class="menu__num mono">07</span>Contact</a>
+    </nav>
+    <div class="menu__foot">
+      <a class="btn btn--lime" href="#contact" data-menu-link><span>Let's Talk</span>
+        <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <p class="mono menu__note">Student developer<br>HTML / CSS / JavaScript</p>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home" aria-labelledby="hero-title">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="container hero__grid">
+
+      <div class="hero__copy">
+        <p class="eyebrow reveal" data-reveal>
+          <span class="eyebrow__dot" aria-hidden="true"></span>
+          STUDENT DEVELOPER / ASTRALABS
+        </p>
+
+        <h1 class="hero__title" id="hero-title" data-split-lines>
+          <span class="line"><span class="line__inner">BUILDING</span></span>
+          <span class="line"><span class="line__inner accent">DIGITAL</span></span>
+          <span class="line"><span class="line__inner serif">EXPERIENCES.</span></span>
+        </h1>
+
+        <p class="hero__desc reveal" data-reveal data-reveal-delay="120">
+          I'm learning, designing and building modern websites that help businesses
+          establish a stronger digital presence.
+        </p>
+
+        <div class="hero__actions reveal" data-reveal data-reveal-delay="200">
+          <a class="btn btn--lime" href="#work">
+            <span>Explore my work</span>
+            <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--outline" href="#contact">
+            <span>Let's connect</span>
+            <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__stage reveal" data-reveal data-reveal-delay="160">
+        <div class="stage" data-stage>
+          <div class="stage__frame">
+            <canvas class="stage__canvas" id="orb-canvas" aria-hidden="true"></canvas>
+
+            <!-- CSS fallback sculpture (also used when WebGL is unavailable) -->
+            <div class="orb" aria-hidden="true">
+              <div class="orb__halo"></div>
+              <div class="orb__core"></div>
+              <div class="orb__ring orb__ring--a"></div>
+              <div class="orb__ring orb__ring--b"></div>
+              <div class="orb__ring orb__ring--c"></div>
+              <div class="orb__spark orb__spark--1"></div>
+              <div class="orb__spark orb__spark--2"></div>
+              <div class="orb__spark orb__spark--3"></div>
+            </div>
+
+            <span class="stage__tick stage__tick--tl" aria-hidden="true"></span>
+            <span class="stage__tick stage__tick--tr" aria-hidden="true"></span>
+            <span class="stage__tick stage__tick--bl" aria-hidden="true"></span>
+            <span class="stage__tick stage__tick--br" aria-hidden="true"></span>
+
+            <div class="stage__meta">
+              <span class="mono">FIG. 01 — SCULPTURE</span>
+              <span class="mono stage__status"><i aria-hidden="true"></i><span data-render-label>CSS RENDER</span></span>
+            </div>
+          </div>
+          <p class="stage__caption mono">Layered geometry / dark chrome / lime light</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container hero__foot">
+      <a class="scroll-cue" href="#about" aria-label="Scroll to the about section">
+        <span class="scroll-cue__track" aria-hidden="true"><span class="scroll-cue__dot"></span></span>
+        <span class="mono">SCROLL</span>
+      </a>
+      <dl class="hero__meta">
+        <div><dt class="mono">ROLE</dt><dd>Design &amp; frontend</dd></div>
+        <div><dt class="mono">STACK</dt><dd>HTML / CSS / JS</dd></div>
+        <div><dt class="mono">STATUS</dt><dd><span class="dot-live" aria-hidden="true"></span>Learning &amp; building</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ TICKER ============ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>RESPONSIVE</span><i></i><span>THOUGHTFUL</span><i></i><span>ACCESSIBLE</span><i></i><span>EDITORIAL</span><i></i><span>PRACTICAL</span><i></i>
+      <span>RESPONSIVE</span><i></i><span>THOUGHTFUL</span><i></i><span>ACCESSIBLE</span><i></i><span>EDITORIAL</span><i></i><span>PRACTICAL</span><i></i>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about" aria-labelledby="about-title">
+    <div class="container">
+      <div class="section__head reveal" data-reveal>
+        <p class="section__label mono"><span class="section__label-num">01</span> / ABOUT</p>
+        <span class="section__rule" aria-hidden="true"></span>
+        <p class="section__note mono">STUDENT / INDEPENDENT DEVELOPER</p>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__intro">
+          <h2 class="h2 about__title" id="about-title" data-split-lines>
+            <span class="line"><span class="line__inner">BEHIND THE</span></span>
+            <span class="line"><span class="line__inner serif">INTERFACE.</span></span>
+          </h2>
+
+          <p class="lede reveal" data-reveal>
+            I'm a student and aspiring developer interested in web development, technology
+            and entrepreneurship. I'm currently learning to build responsive websites and
+            exploring how digital solutions can help businesses.
+          </p>
+
+          <div class="about__body reveal" data-reveal data-reveal-delay="80">
+            <p>
+              Most of my work starts with a simple question: what is this website for, and
+              who is it for? From there I plan the structure, design the layout in the
+              browser, and build it with semantic HTML, modern CSS and plain JavaScript.
+            </p>
+            <p>
+              I'm especially interested in how small businesses use the web — how a clear
+              service page, a sensible enquiry path and a fast mobile experience can be
+              more useful than a complicated site. Every project I take on is a chance to
+              get better at that craft.
+            </p>
+          </div>
+
+          <dl class="about__facts reveal" data-reveal data-reveal-delay="120">
+            <div>
+              <dt class="mono">FOCUS</dt>
+              <dd>Responsive frontend &amp; clear interfaces</dd>
+            </div>
+            <div>
+              <dt class="mono">LEARNING</dt>
+              <dd>HTML, CSS, JavaScript — through practice</dd>
+            </div>
+            <div>
+              <dt class="mono">INTERESTS</dt>
+              <dd>Technology, business &amp; real problems</dd>
+            </div>
+          </dl>
+        </div>
+
+        <aside class="about__aside" aria-label="About at a glance">
+          <figure class="about__figure reveal" data-reveal data-reveal-delay="60">
+            <svg class="about__art" viewBox="0 0 480 480" role="img" aria-labelledby="about-art-title about-art-desc">
+              <title id="about-art-title">Abstract composition of concentric rings and grid lines</title>
+              <desc id="about-art-desc">A technical diagram of overlapping circles with an arc in electric lime and fine crosshair marks, representing structure and iteration.</desc>
+              <defs>
+                <pattern id="aboutGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+                  <path d="M40 0H0V40" fill="none" stroke="rgba(244,241,232,.07)" stroke-width="1"/>
+                </pattern>
+                <linearGradient id="aboutArc" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#C5FF4A"/>
+                  <stop offset="1" stop-color="#C5FF4A" stop-opacity=".15"/>
+                </linearGradient>
+              </defs>
+              <rect width="480" height="480" fill="#11131A"/>
+              <rect width="480" height="480" fill="url(#aboutGrid)"/>
+              <circle cx="240" cy="240" r="168" fill="none" stroke="rgba(244,241,232,.14)"/>
+              <circle cx="240" cy="240" r="132" fill="none" stroke="rgba(244,241,232,.10)"/>
+              <circle cx="240" cy="240" r="96" fill="none" stroke="rgba(244,241,232,.18)"/>
+              <circle cx="240" cy="240" r="60" fill="none" stroke="rgba(244,241,232,.22)"/>
+              <path d="M97 306a168 168 0 0 1 258-190" fill="none" stroke="url(#aboutArc)" stroke-width="3" stroke-linecap="round"/>
+              <path d="M240 72v336M72 240h336" stroke="rgba(244,241,232,.16)" stroke-dasharray="2 6"/>
+              <circle cx="240" cy="240" r="10" fill="#C5FF4A"/>
+              <circle cx="355" cy="152" r="5" fill="#9B8AFF"/>
+              <path d="M355 122v-14M355 196v14M325 152h-14M399 152h14" stroke="rgba(183,166,255,.6)"/>
+              <path d="M240 408l9 9-9 9-9-9z" fill="none" stroke="rgba(244,241,232,.35)"/>
+              <text x="28" y="44" fill="#858792" font-family="ui-monospace, monospace" font-size="10" letter-spacing="2">FIG. 02</text>
+              <text x="28" y="60" fill="#858792" font-family="ui-monospace, monospace" font-size="10" letter-spacing="2">COMPOSITION STUDY</text>
+            </svg>
+            <figcaption class="mono">STRUCTURE / RHYTHM / ITERATION</figcaption>
+          </figure>
+
+          <div class="about__panels">
+            <article class="panel panel--offset reveal" data-reveal data-reveal-delay="100">
+              <p class="panel__label mono">01 — APPROACH</p>
+              <p class="panel__text">Start with the problem, not the decoration. Structure and content come before effects.</p>
+            </article>
+            <article class="panel reveal" data-reveal data-reveal-delay="160">
+              <p class="panel__label mono">02 — PRINCIPLE</p>
+              <p class="panel__text">If a page is slow, confusing or unusable on a phone, it isn't finished.</p>
+            </article>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section services" id="services" aria-labelledby="services-title">
+    <div class="container">
+      <div class="section__head reveal" data-reveal>
+        <p class="section__label mono"><span class="section__label-num">—</span> / CAPABILITIES</p>
+        <span class="section__rule" aria-hidden="true"></span>
+        <p class="section__note mono">WHAT I CAN BUILD FOR YOU</p>
+      </div>
+
+      <div class="services__intro">
+        <h2 class="h2 reveal" id="services-title" data-reveal>WHAT I CAN <em class="serif">BUILD</em></h2>
+        <p class="services__desc reveal" data-reveal data-reveal-delay="80">
+          Focused frontend work for small businesses and independent projects. Clear scope,
+          honest timelines, and websites that stay easy to maintain.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card card--wide reveal" data-reveal>
+          <div class="card__viz card__viz--browser" aria-hidden="true">
+            <div class="mini-browser">
+              <div class="mini-browser__bar"><i></i><i></i><i></i></div>
+              <div class="mini-browser__body">
+                <div class="mini-browser__nav"></div>
+                <div class="mini-browser__hero"></div>
+                <div class="mini-browser__row"><span></span><span></span><span></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="card__body">
+            <div class="card__top">
+              <span class="mono card__num">01</span>
+              <span class="mono card__tag">SMALL BUSINESS</span>
+            </div>
+            <h3 class="card__title">Business Websites</h3>
+            <p class="card__text">
+              Modern websites for small businesses: a clear introduction to what you do,
+              your services, and how customers can reach you.
+            </p>
+            <span class="card__foot mono">MULTI-SECTION / CONTENT-LED
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <article class="card card--wide reveal" data-reveal data-reveal-delay="80">
+          <div class="card__viz card__viz--devices" aria-hidden="true">
+            <div class="mini-devices">
+              <div class="mini-device mini-device--desktop"><span></span></div>
+              <div class="mini-device mini-device--tablet"><span></span></div>
+              <div class="mini-device mini-device--phone"><span></span></div>
+            </div>
+          </div>
+          <div class="card__body">
+            <div class="card__top">
+              <span class="mono card__num">02</span>
+              <span class="mono card__tag">ALL SCREENS</span>
+            </div>
+            <h3 class="card__title">Responsive Web Design</h3>
+            <p class="card__text">
+              Clear layouts designed to work across mobile, tablet and desktop, with
+              accessible controls and careful attention to smaller screens.
+            </p>
+            <span class="card__foot mono">FLUID GRIDS / FLEXIBLE TYPE
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </article>
+
+
+
+        <article class="card reveal" data-reveal>
+          <div class="card__viz card__viz--redesign" aria-hidden="true">
+            <div class="mini-split">
+              <div class="mini-split__before"><span></span><span></span><span></span></div>
+              <div class="mini-split__divider"></div>
+              <div class="mini-split__after"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+          <div class="card__body">
+            <div class="card__top">
+              <span class="mono card__num">03</span>
+              <span class="mono card__tag">EXISTING WEBSITES</span>
+            </div>
+            <h3 class="card__title">Website Updates</h3>
+            <p class="card__text">
+              Basic content, layout and design improvements to help an existing website
+              stay clear, useful and current.
+            </p>
+            <span class="card__foot mono">CONTENT / LAYOUT / DESIGN
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="services__note mono reveal" data-reveal>
+        <span aria-hidden="true">↳</span> SCOPE IS AGREED BEFORE WORK STARTS. NO GUARANTEED RANKINGS, TRAFFIC OR REVENUE — JUST CAREFUL FRONTEND WORK.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ SELECTED WORK ============ -->
+  <section class="section work" id="work" aria-labelledby="work-title">
+    <div class="container">
+      <div class="section__head reveal" data-reveal>
+        <p class="section__label mono"><span class="section__label-num">02</span> / SELECTED WORK</p>
+        <span class="section__rule" aria-hidden="true"></span>
+        <p class="section__note mono">ONE PROJECT, PRESENTED IN FULL</p>
+      </div>
+
+      <div class="work__intro">
+        <h2 class="h2 reveal" id="work-title" data-reveal>SELECTED <em class="serif">EXPERIMENTS</em></h2>
+        <p class="work__desc reveal" data-reveal data-reveal-delay="80">
+          A first complete build, documented honestly — what it does, how it was
+          approached, and where its limits are.
+        </p>
+      </div>
+
+      <article class="project reveal" data-reveal data-project-card>
+        <a class="project__media" href="https://astralabs210.github.io/glow-studio/" target="_blank" rel="noopener noreferrer" aria-label="Open the live Glow Studio demonstration in a new tab">
+          <span class="project__media-glow" aria-hidden="true"></span>
+
+          <div class="browser" aria-hidden="true">
+            <div class="browser__bar">
+              <span class="browser__dots"><i></i><i></i><i></i></span>
+              <span class="browser__url mono">astralabs210.github.io/glow-studio</span>
+              <span class="browser__dots browser__dots--ghost"></span>
+            </div>
+            <div class="browser__screen">
+              <div class="mock">
+                <div class="mock__nav">
+                  <span class="mock__logo">GLOW STUDIO</span>
+                  <span class="mock__links"><i></i><i></i><i></i><i></i></span>
+                </div>
+                <div class="mock__hero">
+                  <div class="mock__hero-copy">
+                    <span class="mock__kicker">Premium beauty salon</span>
+                    <p class="mock__title">BEAUTY IS AN ART.<br><em>MAKE IT YOURS.</em></p>
+                    <span class="mock__line"></span>
+                    <span class="mock__line mock__line--short"></span>
+                    <div class="mock__btns"><span class="mock__btn">Explore services</span><span class="mock__btn mock__btn--ghost">Book</span></div>
+                  </div>
+                  <div class="mock__hero-visual">
+                    <span class="mock__portrait"></span>
+                    <span class="mock__caption">By appointment</span>
+                  </div>
+                </div>
+                <div class="mock__strip">
+                  <span>HAIR STYLING</span><span>MAKEUP</span><span>SKIN CARE</span><span>BRIDAL</span>
+                </div>
+                <div class="mock__grid">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="phone" aria-hidden="true">
+            <span class="phone__notch"></span>
+            <div class="phone__screen">
+              <div class="mock mock--mobile">
+                <div class="mock__nav">
+                  <span class="mock__logo mock__logo--sm">GLOW</span>
+                  <span class="mock__burger"></span>
+                </div>
+                <div class="mock__hero-copy">
+                  <span class="mock__kicker">Premium salon</span>
+                  <p class="mock__title">BEAUTY<br>IS AN ART.</p>
+                  <div class="mock__btns"><span class="mock__btn">Book now</span></div>
+                </div>
+                <div class="mock__grid mock__grid--sm"><span></span><span></span></div>
+              </div>
+            </div>
+          </div>
+
+          <span class="project__hover mono">OPEN LIVE SITE
+            <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="project__info">
+          <div class="project__row">
+            <span class="mono project__num" data-project-num>01</span>
+            <span class="mono project__tag">DEMONSTRATION PROJECT</span>
+          </div>
+
+          <h3 class="project__title">GLOW <em class="serif">STUDIO</em></h3>
+          <p class="project__type mono">FICTIONAL PREMIUM SALON — WEBSITE CONCEPT</p>
+
+          <p class="project__desc">
+            A premium salon website concept designed to present beauty services, introduce
+            the salon, showcase a visual gallery and provide an appointment enquiry interface.
+          </p>
+
+          <ul class="tags" aria-label="Technologies used">
+            <li class="mono">HTML5</li>
+            <li class="mono">CSS3</li>
+            <li class="mono">JAVASCRIPT</li>
+          </ul>
+
+          <div class="project__actions">
+            <a class="btn btn--lime" href="https://astralabs210.github.io/glow-studio/" target="_blank" rel="noopener noreferrer">
+              <span>Visit live project</span>
+              <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <button class="btn btn--outline" type="button" data-open-project aria-haspopup="dialog">
+              <span>View details</span>
+              <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 3h9v9M13 3 3 13" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+
+          <p class="project__disclaimer">
+            <span class="project__disclaimer-mark" aria-hidden="true">!</span>
+            Glow Studio is a self-initiated demonstration project built to practise frontend
+            development. It is not a paid client engagement and the salon is not a real
+            business. The preview above is a designed representation, not a screenshot.
+          </p>
+        </div>
+      </article>
+
+      <div class="work__foot reveal" data-reveal>
+        <p class="mono">MORE PROJECTS IN PROGRESS — NEW WORK IS ADDED AS EACH BUILD IS FINISHED.</p>
+        <a class="link-arrow mono" href="#contact">DISCUSS A PROJECT
+          <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECT DIALOG ============ -->
+  <dialog class="modal" id="project-dialog" aria-labelledby="project-dialog-title">
+    <div class="modal__inner">
+      <header class="modal__head">
+        <div>
+          <p class="mono modal__label">PROJECT 01 / CASE STUDY</p>
+          <h2 class="modal__title" id="project-dialog-title">GLOW <em class="serif">STUDIO</em></h2>
+        </div>
+        <button class="modal__close" type="button" data-close-project aria-label="Close project details">
+          <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M5 5l10 10M15 5 5 15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+      </header>
+
+      <div class="modal__body">
+        <div class="modal__col">
+          <section class="modal__block">
+            <h3 class="mono modal__h">OVERVIEW</h3>
+            <p>
+              Glow Studio is a fictional premium salon website built as a self-initiated
+              demonstration. The goal was to design and build a complete, multi-section
+              site from scratch — not a single landing page — and to practise the full
+              path from structure to responsive frontend.
+            </p>
+          </section>
+
+          <section class="modal__block">
+            <h3 class="mono modal__h">DESIGN APPROACH</h3>
+            <p>
+              The visual direction is calm and editorial: a warm neutral palette, a serif
+              display face for headlines, generous whitespace and restrained motion. Content
+              is grouped by intent — who the salon is, what it offers, visual proof, then a
+              single clear enquiry path. Layouts were designed mobile-first and expanded
+              upward, so the small screen is a deliberate composition rather than a
+              compressed desktop.
+            </p>
+          </section>
+
+          <section class="modal__block">
+            <h3 class="mono modal__h">TECHNOLOGIES</h3>
+            <ul class="tags">
+              <li class="mono">HTML5</li>
+              <li class="mono">CSS3</li>
+              <li class="mono">JAVASCRIPT</li>
+              <li class="mono">GITHUB PAGES</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="modal__col">
+          <section class="modal__block">
+            <h3 class="mono modal__h">FEATURES</h3>
+            <ul class="modal__list">
+              <li>Sticky navigation with a mobile menu</li>
+              <li>Service cards with individual enquiry actions</li>
+              <li>Editorial gallery section for visual work</li>
+              <li>Appointment enquiry interface with a clear demo notice</li>
+              <li>Responsive layouts across mobile, tablet and desktop</li>
+              <li>Scroll-based reveals and hover states</li>
+            </ul>
+          </section>
+
+          <section class="modal__block">
+            <h3 class="mono modal__h">LIMITATIONS</h3>
+            <ul class="modal__list modal__list--muted">
+              <li>Demonstration only — the salon is fictional</li>
+              <li>No backend: the enquiry form does not send or store data</li>
+              <li>Contact details and social links are placeholders</li>
+              <li>Imagery is represented by designed placeholders</li>
+              <li>No booking system, payments or accounts</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <footer class="modal__foot">
+        <p class="mono">SELF-INITIATED DEMONSTRATION — NOT A CLIENT PROJECT.</p>
+        <a class="btn btn--lime btn--sm" href="https://astralabs210.github.io/glow-studio/" target="_blank" rel="noopener noreferrer">
+          <span>Visit live project</span>
+          <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </footer>
+    </div>
+  </dialog>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="section process" id="process" aria-labelledby="process-title">
+    <div class="container">
+      <div class="section__head reveal" data-reveal>
+        <p class="section__label mono"><span class="section__label-num">03</span> / PROCESS</p>
+        <span class="section__rule" aria-hidden="true"></span>
+        <p class="section__note mono">FOUR STEPS / ONE CLEAR PATH</p>
+      </div>
+
+      <div class="process__grid">
+        <div class="process__intro">
+          <h2 class="h2" id="process-title" data-split-lines>
+            <span class="line"><span class="line__inner">FROM IDEA</span></span>
+            <span class="line"><span class="line__inner">TO <em class="serif">INTERFACE.</em></span></span>
+          </h2>
+          <p class="process__desc reveal" data-reveal>
+            A small, repeatable process. Each stage ends with something concrete, so
+            decisions are made before they become expensive to change.
+          </p>
+          <p class="mono process__meta reveal" data-reveal data-reveal-delay="80">
+            NO ESTIMATES PROMISED BEFORE SCOPE IS AGREED.
+          </p>
+        </div>
+
+        <div class="timeline-wrap">
+          <span class="timeline__rail" aria-hidden="true"><span class="timeline__rail-fill" data-timeline-fill></span></span>
+
+          <ol class="timeline" data-timeline>
+            <li class="timeline__item reveal" data-reveal data-step>
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <div class="timeline__head">
+                <span class="mono timeline__num">01</span>
+                <h3 class="timeline__title">UNDERSTAND</h3>
+              </div>
+              <p class="timeline__text">
+                Understand the business, the audience and the actual problem the website
+                needs to solve — in plain language.
+              </p>
+              <p class="mono timeline__out">OUTPUT / WRITTEN BRIEF</p>
+            </li>
+
+            <li class="timeline__item reveal" data-reveal data-step data-reveal-delay="60">
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <div class="timeline__head">
+                <span class="mono timeline__num">02</span>
+                <h3 class="timeline__title">PLAN</h3>
+              </div>
+              <p class="timeline__text">
+                Define the website structure, the pages that are genuinely needed and the
+                requirements for each one.
+              </p>
+              <p class="mono timeline__out">OUTPUT / SITEMAP &amp; SCOPE</p>
+            </li>
+
+            <li class="timeline__item reveal" data-reveal data-step data-reveal-delay="120">
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <div class="timeline__head">
+                <span class="mono timeline__num">03</span>
+                <h3 class="timeline__title">BUILD</h3>
+              </div>
+              <p class="timeline__text">
+                Develop the responsive website, shaping the layout and visual direction
+                with semantic HTML, CSS and JavaScript.
+              </p>
+              <p class="mono timeline__out">OUTPUT / RESPONSIVE WEBSITE</p>
+            </li>
+
+            <li class="timeline__item reveal" data-reveal data-step data-reveal-delay="180">
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <div class="timeline__head">
+                <span class="mono timeline__num">04</span>
+                <h3 class="timeline__title">REFINE</h3>
+              </div>
+              <p class="timeline__text">
+                Test how the site works across devices and with a keyboard, then improve
+                what needs attention before deployment.
+              </p>
+              <p class="mono timeline__out">OUTPUT / TESTED, READY TO DEPLOY</p>
+            </li>
+
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TOOLS ============ -->
+  <section class="section tools" id="tools" aria-labelledby="tools-title">
+    <div class="container">
+      <div class="section__head reveal" data-reveal>
+        <p class="section__label mono"><span class="section__label-num">—</span> / TOOLKIT</p>
+        <span class="section__rule" aria-hidden="true"></span>
+        <p class="section__note mono">NO SCORES. NO BADGES.</p>
+      </div>
+
+      <div class="tools__intro">
+        <h2 class="h2 reveal" id="tools-title" data-reveal>TOOLS I BUILD <em class="serif">WITH</em></h2>
+        <p class="tools__desc reveal" data-reveal data-reveal-delay="80">
+          A deliberately small toolkit. These are the tools I actually use on projects,
+          while I keep learning how far each one can go.
+        </p>
+      </div>
+
+      <ul class="tools__grid">
+        <li class="tool reveal" data-reveal>
+          <span class="tool__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 3h15l-1.4 15L12 21l-6.1-3L4.5 3Z"/><path d="M8 7.5h8l-.3 3.5H8.4l.3 3.5h5"/></svg>
+          </span>
+          <div class="tool__body">
+            <div class="tool__top">
+              <h3 class="tool__name">HTML5</h3>
+              <span class="mono tool__status">USING</span>
+            </div>
+            <p class="tool__note">Semantic structure, accessible markup, forms.</p>
+          </div>
+        </li>
+
+        <li class="tool reveal" data-reveal data-reveal-delay="60">
+          <span class="tool__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 3h15l-1.4 15L12 21l-6.1-3L4.5 3Z"/><path d="M8.2 7.5H16l-.4 4H8.7l.3 3.2h5.8"/></svg>
+          </span>
+          <div class="tool__body">
+            <div class="tool__top">
+              <h3 class="tool__name">CSS3</h3>
+              <span class="mono tool__status">USING</span>
+            </div>
+            <p class="tool__note">Grid, flexbox, custom properties, motion.</p>
+          </div>
+        </li>
+
+        <li class="tool reveal" data-reveal data-reveal-delay="120">
+          <span class="tool__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M10.2 9.5v5.2a1.8 1.8 0 0 1-3.2 1"/><path d="M12.8 15.4c.7.6 1.8.9 2.9.6 1-.3 1.4-1.3.9-2-.4-.6-1.3-.8-2.1-1-.8-.2-1.5-.7-1.5-1.6 0-1 .9-1.7 2.1-1.7.9 0 1.6.3 2.1.8"/></svg>
+          </span>
+          <div class="tool__body">
+            <div class="tool__top">
+              <h3 class="tool__name">JavaScript</h3>
+              <span class="mono tool__status">LEARNING</span>
+            </div>
+            <p class="tool__note">DOM interaction, components, scroll behaviour.</p>
+          </div>
+        </li>
+
+        <li class="tool reveal" data-reveal data-reveal-delay="180">
+          <span class="tool__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="5" r="2.2"/><circle cx="7" cy="19" r="2.2"/><circle cx="17" cy="9" r="2.2"/><path d="M7 7.2v9.6M7 12.4h5.5A4.5 4.5 0 0 0 17 8v-1"/></svg>
+          </span>
+          <div class="tool__body">
+            <div class="tool__top">
+              <h3 class="tool__name">GitHub</h3>
+              <span class="mono tool__status">USING</span>
+            </div>
+            <p class="tool__note">Version control, repositories, project history.</p>
+          </div>
+        </li>
+
+        <li class="tool reveal" data-reveal data-reveal-delay="240">
+          <span class="tool__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.4 4 5.6 4 9s-1.4 6.6-4 9c-2.6-2.4-4-5.6-4-9s1.4-6.6 4-9Z"/></svg>
+          </span>
+          <div class="tool__body">
+            <div class="tool__top">
+              <h3 class="tool__name">GitHub Pages</h3>
+              <span class="mono tool__status">LIVE</span>
+            </div>
+            <p class="tool__note">Static hosting for finished frontend projects.</p>
+          </div>
+        </li>
+
+        <li class="tool reveal" data-reveal data-reveal-delay="300">
+          <span class="tool__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="19" height="16" rx="2"/><path d="M9.5 9.5 6.5 12l3 2.5M14.5 9.5l3 2.5-3 2.5"/></svg>
+          </span>
+          <div class="tool__body">
+            <div class="tool__top">
+              <h3 class="tool__name">VS Code</h3>
+              <span class="mono tool__status">DAILY</span>
+            </div>
+            <p class="tool__note">Writing, reviewing and debugging the code.</p>
+          </div>
+        </li>
+        <li class="tool reveal" data-reveal data-reveal-delay="360">
+          <span class="tool__icon tool__icon--type" aria-hidden="true">RWD</span>
+          <div class="tool__body">
+            <div class="tool__top">
+              <h3 class="tool__name">Responsive Web Design</h3>
+              <span class="mono tool__status">PRACTISING</span>
+            </div>
+            <p class="tool__note">Designing layouts for mobile, tablet and desktop.</p>
+          </div>
+        </li>
+        <li class="tool reveal" data-reveal data-reveal-delay="420">
+          <span class="tool__icon tool__icon--type" aria-hidden="true">AI</span>
+          <div class="tool__body">
+            <div class="tool__top">
+              <h3 class="tool__name">AI-assisted development</h3>
+              <span class="mono tool__status">WITH REVIEW</span>
+            </div>
+            <p class="tool__note">Using AI tools as support while reviewing and learning from the code.</p>
+          </div>
+        </li>
+      </ul>
+
+      <p class="tools__note mono reveal" data-reveal>
+        THIS IS A WORKING TOOLKIT, NOT A PROFICIENCY CHART. I'M STILL LEARNING — AND THE
+        PROJECTS ABOVE ARE WHERE THAT LEARNING HAPPENS.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ DESIGN LAB ============ -->
+  <section class="section design-lab" id="design-lab" aria-labelledby="design-lab-title">
+    <div class="container">
+      <div class="section__head reveal" data-reveal>
+        <p class="section__label mono"><span class="section__label-num">05</span> / DESIGN LAB</p>
+        <span class="section__rule" aria-hidden="true"></span>
+        <p class="section__note mono">INTERACTIVE UI STUDIES</p>
+      </div>
+      <div class="lab__intro">
+        <div>
+          <p class="mono lab__kicker">ONE INTERFACE / EIGHT INTERPRETATIONS</p>
+          <h2 class="h2 lab__title" id="design-lab-title">ONE INTERFACE.<br><em class="serif">EIGHT DESIGN PHILOSOPHIES.</em></h2>
+        </div>
+        <p class="lab__desc">Explore how different design philosophies transform the same digital interface. Each study below is interactive — try its controls.</p>
+      </div>
+
+      <div class="lab__grid">
+        <article class="lab-card lab-card--skeuo reveal" data-reveal>
+          <div class="lab-card__head"><h3 class="mono">01 / SKEUOMORPHISM</h3><span class="lab-card__index">01</span></div>
+          <div class="demo demo--skeuo">
+            <div class="player">
+              <div class="player__screen"><span class="mono">NOW PLAYING</span><strong>Night Drive</strong><small>ASTRAL STUDY / 03:42</small><span class="player__track"><i data-player-progress></i></span></div>
+              <button class="player__button" type="button" data-demo-play aria-pressed="false" aria-label="Play demo track">▶</button>
+            </div>
+            <p class="demo__status mono" data-player-status>PAUSED / INTERFACE DEMO</p>
+          </div>
+          <p class="lab-card__note">Layered metal, inset display and tactile controls.</p>
+        </article>
+
+        <article class="lab-card lab-card--neo reveal" data-reveal data-reveal-delay="50">
+          <div class="lab-card__head"><h3 class="mono">02 / NEUMORPHISM</h3><span class="lab-card__index">02</span></div>
+          <div class="demo demo--neo">
+            <div class="neo-panel"><span class="mono">FOCUS MODE</span><button class="neo-switch" type="button" role="switch" aria-checked="false" data-neo-switch><span></span></button></div>
+            <div class="neo-readout"><strong data-neo-state>OFF</strong><span class="mono">SOFT CONTROL</span></div>
+          </div>
+          <p class="lab-card__note">A raised surface and an inset, accessible toggle.</p>
+        </article>
+
+        <article class="lab-card lab-card--glass reveal" data-reveal data-reveal-delay="100">
+          <div class="lab-card__head"><h3 class="mono">03 / GLASSMORPHISM</h3><span class="lab-card__index">03</span></div>
+          <div class="demo demo--glass">
+            <div class="glass-backdrop"><span></span><span></span><span></span></div>
+            <div class="glass-panel"><span class="mono">STUDIO SIGNAL</span><strong>Clear ideas<br>take shape.</strong><button type="button" data-glass-refresh>Refresh view <span aria-hidden="true">↗</span></button></div>
+          </div>
+          <p class="lab-card__note">Translucent layers, fine borders and controlled blur.</p>
+        </article>
+
+        <article class="lab-card lab-card--liquid reveal" data-reveal data-reveal-delay="150">
+          <div class="lab-card__head"><h3 class="mono">04 / LIQUID GLASS</h3><span class="lab-card__index">04</span></div>
+          <div class="demo demo--liquid">
+            <div class="liquid-orb" aria-hidden="true"></div>
+            <div class="liquid-panel"><span class="mono">LIGHT / FLOW</span><strong>Fluid<br>surfaces.</strong><button type="button" data-liquid-toggle aria-pressed="false">Bend the light</button></div>
+          </div>
+          <p class="lab-card__note">A responsive reflection study with a lightweight CSS glow.</p>
+        </article>
+
+        <article class="lab-card lab-card--clay reveal" data-reveal data-reveal-delay="200">
+          <div class="lab-card__head"><h3 class="mono">05 / CLAYMORPHISM</h3><span class="lab-card__index">05</span></div>
+          <div class="demo demo--clay">
+            <div class="clay-card"><span class="mono">DAILY BUILD</span><strong data-clay-count>04</strong><div><button type="button" data-clay-step="-1" aria-label="Decrease demo count">−</button><button type="button" data-clay-step="1" aria-label="Increase demo count">+</button></div></div>
+          </div>
+          <p class="lab-card__note">Puffy, friendly forms with controls that respond to touch.</p>
+        </article>
+
+        <article class="lab-card lab-card--brutal reveal" data-reveal data-reveal-delay="250">
+          <div class="lab-card__head"><h3 class="mono">06 / BRUTALISM</h3><span class="lab-card__index">06</span></div>
+          <div class="demo demo--brutal">
+            <div class="brutal-poster"><span class="mono">NO SOFT EDGES / 2026</span><strong>MAKE<br>IT <em>MATTER.</em></strong><button type="button" data-brutal-toggle aria-pressed="false">Switch signal <span aria-hidden="true">↗</span></button></div>
+          </div>
+          <p class="lab-card__note">Hard borders, oversized type and direct visual hierarchy.</p>
+        </article>
+
+        <article class="lab-card lab-card--maximal reveal" data-reveal data-reveal-delay="300">
+          <div class="lab-card__head"><h3 class="mono">07 / MAXIMALISM</h3><span class="lab-card__index">07</span></div>
+          <div class="demo demo--maximal">
+            <div class="max-poster" data-max-poster><span class="max-poster__orbit">IDEAS IN ORBIT</span><strong>MORE<br>WONDER.</strong><i aria-hidden="true"></i><button type="button" data-max-cycle>Remix composition <span aria-hidden="true">↗</span></button></div>
+          </div>
+          <p class="lab-card__note">Expressive layers and colour, balanced by clear reading order.</p>
+        </article>
+
+        <article class="lab-card lab-card--spatial reveal" data-reveal data-reveal-delay="350">
+          <div class="lab-card__head"><h3 class="mono">08 / SPATIAL UI</h3><span class="lab-card__index">08</span></div>
+          <div class="demo demo--spatial">
+            <div class="spatial-scene"><div class="spatial-cube" data-spatial-cube aria-hidden="true"><span>01</span><span>02</span><span>03</span><span>04</span><span>05</span><span>06</span></div><div class="spatial-float" aria-hidden="true">DEPTH / 01</div></div>
+            <label class="spatial-control"><span class="mono">ROTATE OBJECT</span><input type="range" min="-35" max="35" value="0" data-spatial-range aria-label="Rotate the spatial demo object"></label>
+          </div>
+          <p class="lab-card__note">A CSS 3D object controlled with a keyboard-friendly slider.</p>
+        </article>
+      </div>
+      <p class="lab__foot mono">SMALL INTERFACE STUDIES / BUILT WITH HTML, CSS &amp; VANILLA JAVASCRIPT</p>
+    </div>
+  </section>
+
+  <!-- ============ LEARNING ============ -->
+  <section class="section learning" id="learning" aria-labelledby="learning-title">
+    <div class="container">
+      <div class="learning__wrap">
+        <div class="learning__head">
+          <p class="section__label mono reveal" data-reveal>ALWAYS IN PROGRESS</p>
+          <h2 class="h2 learning__title" id="learning-title" data-split-lines>
+            <span class="line"><span class="line__inner">ALWAYS BUILDING.</span></span>
+            <span class="line"><span class="line__inner serif">ALWAYS LEARNING.</span></span>
+          </h2>
+          <p class="learning__desc reveal" data-reveal>
+            Progress here isn't a certificate on a wall. It's the next project being a
+            little cleaner than the last one.
+          </p>
+        </div>
+
+        <ul class="learning__list">
+          <li class="learning__item reveal" data-reveal>
+            <span class="mono learning__num">01</span>
+            <div>
+              <h3 class="learning__item-title">Practical website projects</h3>
+              <p class="learning__item-text">Treating every build as a real brief: structure, content, responsive states, testing.</p>
+            </div>
+          </li>
+          <li class="learning__item reveal" data-reveal data-reveal-delay="60">
+            <span class="mono learning__num">02</span>
+            <div>
+              <h3 class="learning__item-title">Frontend development</h3>
+              <p class="learning__item-text">Going deeper into CSS layout, accessible markup and the JavaScript that makes interfaces behave.</p>
+            </div>
+          </li>
+          <li class="learning__item reveal" data-reveal data-reveal-delay="120">
+            <span class="mono learning__num">03</span>
+            <div>
+              <h3 class="learning__item-title">Problem-solving</h3>
+              <p class="learning__item-text">Debugging responsiveness, interaction and performance issues instead of designing around them.</p>
+            </div>
+          </li>
+          <li class="learning__item reveal" data-reveal data-reveal-delay="180">
+            <span class="mono learning__num">04</span>
+            <div>
+              <h3 class="learning__item-title">Business needs</h3>
+              <p class="learning__item-text">Understanding how small businesses present services, answer questions and handle enquiries.</p>
+            </div>
+          </li>
+          <li class="learning__item reveal" data-reveal data-reveal-delay="240">
+            <span class="mono learning__num">05</span>
+            <div>
+              <h3 class="learning__item-title">Exploring technology</h3>
+              <p class="learning__item-text">Reading documentation, studying well-built sites and testing ideas in small experiments.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="section__head reveal" data-reveal>
+        <p class="section__label mono"><span class="section__label-num">04</span> / CONTACT</p>
+        <span class="section__rule" aria-hidden="true"></span>
+        <p class="section__note mono">SMALL PROJECTS / CLEAR SCOPE</p>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__left">
+          <h2 class="contact__title" id="contact-title" data-split-lines>
+            <span class="line"><span class="line__inner">HAVE A PROJECT</span></span>
+            <span class="line"><span class="line__inner serif">IN MIND?</span></span>
+          </h2>
+
+          <p class="contact__desc reveal" data-reveal>
+            Let's discuss how a website could help your business.
+          </p>
+          <p class="contact__note mono reveal" data-reveal data-reveal-delay="120">
+            This static site does not store or send messages. Add your real address to
+            CONTACT_EMAIL near the top of script.js to enable the email hand-off.
+          </p>
+        </div>
+
+        <div class="contact__card reveal" data-reveal data-reveal-delay="60">
+          <div class="contact__card-head">
+            <span class="mono">PROJECT ENQUIRY</span>
+            <span class="mono contact__badge">EMAIL HAND-OFF</span>
+          </div>
+          <form class="contact-form" data-contact-form>
+            <label class="contact-form__field">
+              <span class="mono">YOUR NAME</span>
+              <input name="name" autocomplete="name" required>
+            </label>
+            <label class="contact-form__field">
+              <span class="mono">BUSINESS NAME <small>(OPTIONAL)</small></span>
+              <input name="business" autocomplete="organization">
+            </label>
+            <label class="contact-form__field">
+              <span class="mono">EMAIL ADDRESS</span>
+              <input name="email" type="email" autocomplete="email" required>
+            </label>
+            <label class="contact-form__field">
+              <span class="mono">WHAT DO YOU HAVE IN MIND?</span>
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <button class="btn btn--lime contact-form__submit" type="submit">
+              <span>Prepare email</span>
+              <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <p class="contact-form__status mono" role="status" aria-live="polite" data-contact-status></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" aria-labelledby="footer-title">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <h2 class="footer__title" id="footer-title">
+          <span class="mono footer__title-label">INDEPENDENT / PORTFOLIO</span>
+          ASTRA<em class="serif">LABS</em>
+        </h2>
+        <p class="footer__statement">
+          A student developer learning to build thoughtful, responsive websites —
+          and documenting the work honestly.
+        </p>
+        <a class="footer__link mono" href="https://astralabs210.github.io/glow-studio/" target="_blank" rel="noopener noreferrer">
+          LATEST PROJECT — GLOW STUDIO
+          <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer">
+        <div class="footer__col">
+          <h3 class="mono footer__col-title">EXPLORE</h3>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#work">Projects</a>
+          <a href="#services">Services</a>
+          <a href="#design-lab">Design Lab</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h3 class="mono footer__col-title">PROJECT</h3>
+          <a href="https://astralabs210.github.io/glow-studio/" target="_blank" rel="noopener noreferrer">Glow Studio ↗</a>
+          <a href="#work">Case study</a>
+          <a href="#tools">Toolkit</a>
+          <a href="#learning">Learning</a>
+          <a href="#design-lab">Design lab</a>
+        </div>
+        <div class="footer__col">
+          <h3 class="mono footer__col-title">CONTACT</h3>
+          <a href="#contact">Let's talk</a>
+          <span class="footer__muted">Use the enquiry form</span>
+          <span class="footer__muted">Email address not configured yet</span>
+        </div>
+      </nav>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="mono">© <span data-year>2026</span> ASTRALABS — ALL RIGHTS RESERVED</p>
+      <p class="mono footer__built">BUILT WITH HTML / CSS / JAVASCRIPT</p>
+      <button class="footer__totop mono" type="button" data-to-top>
+        BACK TO TOP <span aria-hidden="true">↑</span>
+      </button>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

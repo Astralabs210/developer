@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ASTRALABS mark">
+  <rect width="64" height="64" rx="14" fill="#08090D"/>
+  <rect x="8" y="8" width="48" height="48" rx="12" fill="none" stroke="#C5FF4A" stroke-opacity="0.35"/>
+  <path d="M17 45 29 18h6l12 27h-7l-2.5-6H26.5L24 45h-7Zm12-12h6l-3-7-3 7Z" fill="#C5FF4A"/>
+  <circle cx="47" cy="17" r="3" fill="#9B8AFF"/>
+</svg>
